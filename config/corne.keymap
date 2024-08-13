@@ -196,6 +196,11 @@
             bindings = <&kp LG(V)>;
             key-positions = <28 29>;
         };
+
+        Alt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <2 3>;
+        };
     };
 
     keymap {
@@ -242,10 +247,10 @@
 
             label = "Raise";
             bindings = <
-&kp TAB    &kp EXCL   &kp AT     &kp HASH   &kp DLLR    &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &control1  &control2  &control3  &control4   &control5    &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans     &trans     &CtrlLeft  &CtrlRight  &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                                 &kp LGUI   &trans      &kp SPACE    &kp RET    &trans     &kp RALT
+&kp TAB    &kp EXCL   &kp AT     &kp HASH   &kp DLLR        &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
+&kp LCTRL  &control1  &control2  &control3  &control4       &control5    &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
+&kp LSHFT  &trans     &trans     &CtrlLeft  &CtrlRight      &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
+                                 &kp LGUI   &kp LEFT_SHIFT  &kp SPACE    &kp RET    &trans     &kp RALT
             >;
         };
     };
