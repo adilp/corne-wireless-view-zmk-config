@@ -177,6 +177,20 @@
 
             label = "TERMINAL";
         };
+
+        Database: Database {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp D>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "DATABASE";
+        };
     };
 
     combos {
@@ -249,7 +263,7 @@
             bindings = <
 &kp TAB    &kp EXCL   &kp AT     &kp HASH   &kp DLLR        &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
 &kp LCTRL  &control1  &control2  &control3  &control4       &control5    &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans     &trans     &CtrlLeft  &CtrlRight      &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
+&kp LSHFT  &control6  &control7  &control8  &control9       &Database    &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
                                  &kp LGUI   &kp LEFT_SHIFT  &kp SPACE    &kp RET    &trans     &kp RALT
             >;
         };
